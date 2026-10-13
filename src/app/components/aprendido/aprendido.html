@@ -1,1 +1,18 @@
-<p>aprendido works!</p>
+<section class="mb-4">
+  <h2 class="h4 mb-3">Lo que aprendí</h2>
+  <div class="row g-3">
+    @for (tema of temas; track tema.id) {
+      <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <span class="badge bg-primary mb-2">{{ tema.tecnologia }}</span>
+            <h3 class="h6">{{ tema.titulo }}</h3>
+            <p class="card-text small mb-0">{{ tema.descripcion }}</p>
+          </div>
+        </div>
+      </div>
+    } @empty {
+      <p>No hay temas registrados.</p>
+    }
+  </div>
+</section>

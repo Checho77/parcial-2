@@ -1,1 +1,10 @@
-<p>presentacion works!</p>
+<section class="card shadow-sm mb-4">
+  <div class="card-body d-flex flex-column flex-md-row align-items-center gap-4">
+    <img [src]="foto" alt="Foto de {{ nombre }}" class="rounded-circle" width="150" height="150">
+    <div>
+      <h1 class="h3">{{ nombre }}</h1>
+      <h2 class="h5 text-primary">{{ profesion }}</h2>
+      <p class="mb-0">{{ perfil }}</p>
+    </div>
+  </div>
+</section>

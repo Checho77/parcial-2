@@ -1,1 +1,11 @@
-<p>contacto works!</p>
+<section class="mb-4">
+  <h2 class="h4 mb-3">Contacto</h2>
+  <ul class="list-group">
+    @for (dato of datos; track dato.id) {
+      <li class="list-group-item d-flex justify-content-between">
+        <strong>{{ dato.etiqueta }}</strong>
+        <a [href]="dato.enlace" target="_blank">{{ dato.valor }}</a>
+      </li>
+    }
+  </ul>
+</section>

@@ -1,1 +1,21 @@
-<p>proyectos works!</p>
+<section class="mb-4">
+  <h2 class="h4 mb-3">Proyectos</h2>
+  <div class="row g-3">
+    @for (proyecto of proyectos; track proyecto.id) {
+      <div class="col-12 col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="h6">{{ proyecto.nombre }}</h3>
+            <p class="card-text small">{{ proyecto.descripcion }}</p>
+            @for (tec of proyecto.tecnologias; track tec) {
+              <span class="badge bg-secondary me-1">{{ tec }}</span>
+            }
+            @if (proyecto.enlace) {
+              <a [href]="proyecto.enlace" target="_blank" class="d-block mt-3 small">Ver repositorio</a>
+            }
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</section>
