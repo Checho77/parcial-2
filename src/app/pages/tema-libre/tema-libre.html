@@ -1,1 +1,25 @@
-<p>tema-libre works!</p>
+<h1 class="h3 mb-1">Fútbol</h1>
+<p class="text-muted mb-4">Algunos jugadores que me gustan.</p>
+
+<div class="row g-3">
+  @for (jugador of jugadores; track jugador.id) {
+    <div class="col-12 col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h2 class="h5">
+            {{ jugador.nombre }}
+            @if (jugador.esLeyenda) {
+              <span class="badge bg-warning text-dark ms-1">Leyenda</span>
+            }
+          </h2>
+          <p class="mb-1 small"><strong>Equipo:</strong> {{ jugador.equipo }}</p>
+          <p class="mb-1 small"><strong>Posición:</strong> {{ jugador.posicion }}</p>
+          <p class="mb-2 small"><strong>País:</strong> {{ jugador.pais }}</p>
+          <p class="card-text small text-muted mb-0">{{ jugador.curiosidad }}</p>
+        </div>
+      </div>
+    </div>
+  } @empty {
+    <p>No hay jugadores registrados.</p>
+  }
+</div>

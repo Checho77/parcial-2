@@ -4,7 +4,7 @@
     @for (dato of datos; track dato.id) {
       <li class="list-group-item d-flex justify-content-between">
         <strong>{{ dato.etiqueta }}</strong>
-        <a [href]="dato.enlace" target="_blank">{{ dato.valor }}</a>
+        <a [href]="dato.enlace" target="_blank" rel="noopener">{{ dato.valor }}</a>
       </li>
     }
   </ul>
