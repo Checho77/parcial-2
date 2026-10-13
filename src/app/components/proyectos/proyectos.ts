@@ -24,7 +24,7 @@ export class Proyectos {
       nombre: 'Portafolio con Angular',
       descripcion: 'Este proyecto: hoja de vida, aprendizaje y tema libre.',
       tecnologias: ['Angular', 'Bootstrap', 'Git'],
-      enlace: 'https://github.com/tu-usuario/parcial-2'
+      enlace: 'https://github.com/checho77/Taller-web1-html'
     }
   ];
 }

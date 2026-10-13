@@ -33,8 +33,7 @@ export class Aprendizaje {
       tecnologia: 'Git y GitHub',
       temas: ['Commits descriptivos', 'Repositorio remoto', 'git push'],
       actividad: 'Repositorio del parcial',
-      completado: false,
-      nota: 'Falta publicar la versión final'
+      completado: true,
     }
   ];
 }
